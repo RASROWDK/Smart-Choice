@@ -33,6 +33,7 @@ namespace Projeto
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.LOADING = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -52,6 +53,15 @@ namespace Projeto
             this.LOADING.Enabled = true;
             this.LOADING.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(486, 118);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -59,6 +69,7 @@ namespace Projeto
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1494, 800);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
@@ -73,6 +84,7 @@ namespace Projeto
         #endregion
         private System.Windows.Forms.Timer LOADING;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
